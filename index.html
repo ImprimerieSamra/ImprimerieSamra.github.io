@@ -11,7 +11,7 @@ https://templatemo.com/tm-507-victory
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon" type="image/x-icon" href="Sans titre-1.png">
+        <link rel="icon" type="image/x-icon" href="img2/Sans titre-1.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -24,19 +24,24 @@ https://templatemo.com/tm-507-victory
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-<style>/* Style pour le menu déroulant */
+<style>
+.dropdown-menu{width: 260%;}
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
 
-    .dropdown-menu {
-        background-color: #ffffff;
-        margin-top: 0;
-        width: 190%;
-    } 
-    .dropdown-menu li a {
-        font-size: 14px;
-        font-weight: normal;
-        padding: 10px 20px;
-    }
-    .col-sm-6:hover{text-decoration: none;}
+.dropdown-menu li img {
+  width: 40%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.dropdown-menu li span {
+  font-weight: bold;
+}
+
     </style>
 <body>
     <div class="header">
@@ -56,26 +61,29 @@ https://templatemo.com/tm-507-victory
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Acceuil</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <ul class="list-unstyled" style="margin-left: -15%;text-decoration: none;">
-                                            <li><a class="cat1" href="produit1.html">Produit</a></li>
-                                            <li><a class="cat1" href="produit2.html">Produit</a></li>
-                                            <li><a class="cat1" href="produit3.html">Produit</a></li> 
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul class="list-unstyled" style="margin-left: -50%;text-decoration: none;">
-                                            <li><a class="cat2" style="color: red;" href="produit1.html">Produit</a></li>
-                                            <li><a class="cat2" href="produit2.html">Produit</a></li>
-                                            <li><a class="cat2" href="produit3.html">Produit</a></li> 
-                                        </ul>
-                                    </div>
-                                </div>
+                              <li>
+                                <a href="#">
+                                  <img src="img2/menu-image-promotional-printing-flyers.webp" />
+                                  <span>Flyers</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img style="width: 25%;" src="img2/menu-image-promotional-printing-businesscards.webp" />
+                                  <span>Cartes</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img style="width: 25%;" src="img2/menu-image-promotional-printing-rollerbanner.webp" />
+                                  <span>Kakémonos</span>
+                                </a>
+                              </li>
                             </ul>
-                        </li>
+                          </li>
+                          
                         
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -94,7 +102,7 @@ https://templatemo.com/tm-507-victory
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <img src="Sans titre-1.png" style="height: 15vh; margin-top: -30%;">
+                    <img src="img2/Sans titre-1.png" style="height: 15vh; margin-top: -30%;">
                     <h4>BIENVENUE CHEZ</h4>
                     <h2>IMprimerie Samra</h2>
                     <p style="font-size: 140%;color: rgb(255, 255, 255);">Besoin des supports de communication pour la publicité de votre business ?
@@ -147,7 +155,7 @@ https://templatemo.com/tm-507-victory
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <a href="menu.html">
-                            <img src="papetrie.png" alt="Breakfast">
+                            <img src="img2/papetrie.png" alt="Breakfast">
                         <h4>Papeterie</h4>
                         </a>
                     </div>
