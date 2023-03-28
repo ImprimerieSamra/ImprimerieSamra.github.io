@@ -25,7 +25,128 @@ https://templatemo.com/tm-507-victory
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+<style>
+    /* Style pour le menu */
+		.dropbtn {
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+		}
 
+		/* Style pour le contenu du menu */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		/* Style pour les liens du menu */
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		/* Style pour les liens du menu lorsqu'ils sont survolés */
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		/* Affiche le contenu du menu lorsque le bouton est survolé */
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+
+
+
+
+    /* Style pour le bouton du menu principal lorsque l'écran est trop petit */
+		@media screen and (max-width: 600px) {
+			.dropbtn {
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			text-align: center;
+		}
+		}
+
+		/* Style pour le contenu du menu principal lorsque l'écran est trop petit */
+		@media screen and (max-width: 600px) {
+			.dropdown-content {
+				position: static;
+				display: none;
+				width: 100%;
+			}
+		}
+
+		/* Style pour les liens du menu principal lorsque l'écran est trop petit */
+		@media screen and (max-width: 600px) {
+			.dropdown-content a {
+				display: block;
+				border-bottom: 1px solid #ddd;
+			}
+		}
+
+		/* Style pour le menu déroulant des sous-menus */
+		.dropdown-submenu {
+			position: relative;
+		}
+
+		/* Style pour le bouton du menu déroulant des sous-menus */
+		.dropdown-submenu > .dropbtn {
+			background-color: #f1f1f1;
+			color: black;
+		}
+
+		/* Style pour le contenu du menu déroulant des sous-menus */
+		.dropdown-submenu .dropdown-content {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 100%;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+
+
+
+
+
+    @media screen and (max-width: 600px) {
+		.dropdown-submenu > .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: left;
+		}
+
+		.dropdown-submenu .dropdown-content {
+			position: static;
+			display: none;
+			width: 100%;
+		}
+
+		.dropdown-submenu .dropdown-content a {
+			display: block;
+			border-bottom: 1px solid #ddd;
+			padding-left: 30px;
+		}
+	}
+	</style>
+    
     <body onload="myFunction()" style="margin:0;">
         <h1 class="h1">
             <span class="let1" id="loader">c</span>  
@@ -54,28 +175,30 @@ https://templatemo.com/tm-507-victory
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Acceuil</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a href="#">
-                                  <img src="img2/menu-image-promotional-printing-flyers.webp" />
-                                  <span>Flyers</span>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <img style="width: 25%;" src="img2/menu-image-promotional-printing-businesscards.webp" />
-                                  <span>Cartes</span>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <img style="width: 25%;" src="img2/menu-image-promotional-printing-rollerbanner.webp" />
-                                  <span>Kakémonos</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
+                          <a href="#" class="dropbtn" class="drop">Produits <b class="caret"></b></a>
+                          <ul class="dropdown-content">
+                            <li>
+                              <a href="marketing.html">
+                                <span>Marketing</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="Papier.html">
+                                <span>Papier</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="stickers.html">
+                                <span>Stickers</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="Emballage.html">
+                                <span>Emballage</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
                           
                         
                         <li><a href="contact.html">Contact</a></li>
@@ -116,7 +239,7 @@ https://templatemo.com/tm-507-victory
 								<div class="row">
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
 					        			<a href="tel:+212 660-460038"><span class="fa fa-phone"></span></a>
 					        		</div>
 					        		<div class="text">
@@ -128,7 +251,7 @@ https://templatemo.com/tm-507-victory
 							
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
 					        			<a href="mailto:adil.amir.lh@gmail.com"><span class="fa fa-envelope"></span></a>
 					        		</div>
 					        		<div class="text">
@@ -139,8 +262,8 @@ https://templatemo.com/tm-507-victory
 									</div>
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
-                                        <a href=""><span class="fa fa-map-marker"></span></a>
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
+                      <a href=""><span class="fa fa-map-marker"></span></a>
 					        		</div>
 					        		<div class="text">
 						            <p><a href=""><span>Localistaion</span></a></p>
@@ -165,7 +288,7 @@ https://templatemo.com/tm-507-victory
 								<div class="row">
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
 					        			<a href="https://www.facebook.com/profile.php?id=100089818906801&mibextid=ZbWKwL" target="_blank"><span class="fa fa-facebook"></span></a>
 					        		</div>
 					        		<div class="text">
@@ -177,7 +300,7 @@ https://templatemo.com/tm-507-victory
 							
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
 					        			<a href="https://api.whatsapp.com/send?phone=+212660460038"><span class="fa fa-whatsapp"></span></a>
 					        		</div>
 					        		<div class="text">
@@ -188,7 +311,7 @@ https://templatemo.com/tm-507-victory
 									</div>
 									<div class="col-md-4" style="user-select: none;">
 										<div class="dbox w-100 text-center">
-					        		<div class="icon d-flex align-items-center justify-content-center">
+					        		<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(175, 112, 67);">
 					        			<a href="index.html"><span class="fa fa-home"></span></a>
 					        		</div>
 					        		<div class="text">
@@ -290,6 +413,36 @@ https://templatemo.com/tm-507-victory
         };
     }
     </script>
+<script>
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		for (var i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.style.display === 'block') {
+				openDropdown.style.display = 'none';
+			}
+		}
+	}
+}
+
+
+
+document.querySelector('.dropbtn').addEventListener('click', function() {
+  var dropdownContent = document.querySelector('.dropdown-content');
+  if (dropdownContent.style.display === 'block') {
+    dropdownContent.style.display = 'none';
+  } else {
+    dropdownContent.style.display = 'block';
+  }
+});
+</script>
+
+
+
+
+
+
 </body>
 </html>
 

@@ -11,7 +11,7 @@ https://templatemo.com/tm-507-victory
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon" type="image/x-icon" href="Sans titre-1.png">
+        <link rel="icon" type="image/x-icon" href="img2/Sans titre-1.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -25,24 +25,127 @@ https://templatemo.com/tm-507-victory
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <style>
-        .dropdown-menu{width: 260%;}
-        .dropdown-menu li {
-          display: flex;
-          align-items: center;
-          margin-bottom: 2%;
+        /* Style pour le menu */
+            .dropbtn {
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            /* Style pour le contenu du menu */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+    
+            /* Style pour les liens du menu */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+    
+            /* Style pour les liens du menu lorsqu'ils sont survolés */
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+    
+            /* Affiche le contenu du menu lorsque le bouton est survolé */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+    
+    
+    
+    
+    
+        /* Style pour le bouton du menu principal lorsque l'écran est trop petit */
+            @media screen and (max-width: 600px) {
+                .dropbtn {
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+            }
+            }
+    
+            /* Style pour le contenu du menu principal lorsque l'écran est trop petit */
+            @media screen and (max-width: 600px) {
+                .dropdown-content {
+                    position: static;
+                    display: none;
+                    width: 100%;
+                }
+            }
+    
+            /* Style pour les liens du menu principal lorsque l'écran est trop petit */
+            @media screen and (max-width: 600px) {
+                .dropdown-content a {
+                    display: block;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+    
+            /* Style pour le menu déroulant des sous-menus */
+            .dropdown-submenu {
+                position: relative;
+            }
+    
+            /* Style pour le bouton du menu déroulant des sous-menus */
+            .dropdown-submenu > .dropbtn {
+                background-color: #f1f1f1;
+                color: black;
+            }
+    
+            /* Style pour le contenu du menu déroulant des sous-menus */
+            .dropdown-submenu .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+    
+    
+    
+    
+    
+    
+        @media screen and (max-width: 600px) {
+            .dropdown-submenu > .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+    
+            .dropdown-submenu .dropdown-content {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+    
+            .dropdown-submenu .dropdown-content a {
+                display: block;
+                border-bottom: 1px solid #ddd;
+                padding-left: 30px;
+            }
         }
+        </style>
         
-        .dropdown-menu li img {
-          width: 40%;
-          height: 50px;
-          margin-right: 10px;
-        }
-        
-        .dropdown-menu li span {
-          font-weight: bold;
-        }
-        
-            </style>
 <body onload="myFunction()" style="margin:0;">
     <h1 class="h1">
         <span class="let1" id="loader">p</span>  
@@ -71,29 +174,30 @@ https://templatemo.com/tm-507-victory
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Acceuil</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
+                                <a href="#" class="dropbtn" class="drop">Produits <b class="caret"></b></a>
+                                <ul class="dropdown-content">
                                   <li>
-                                    <a href="#">
-                                      <img src="img2/menu-image-promotional-printing-flyers.webp" />
-                                      <span>Flyers</span>
+                                    <a href="marketing.html">
+                                      <span>Marketing</span>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      <img style="width: 25%;" src="img2/menu-image-promotional-printing-businesscards.webp" />
-                                      <span>Cartes</span>
+                                    <a href="Papier.html">
+                                      <span>Papier</span>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      <img style="width: 25%;" src="img2/menu-image-promotional-printing-rollerbanner.webp" />
-                                      <span>Kakémonos</span>
+                                    <a href="stickers.html">
+                                      <span>Stickers</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="Emballage.html">
+                                      <span>Emballage</span>
                                     </a>
                                   </li>
                                 </ul>
                               </li>
-                              
                             
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
