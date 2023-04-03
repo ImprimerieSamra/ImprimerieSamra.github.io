@@ -1,4 +1,6 @@
 
+
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -3359,49 +3361,49 @@
 .text-primary {
   color: #007bff !important; }
 
-a.text-primary:, a.text-primary:focus {
+a.text-primary a.text-primary:focus {
   color: #0056b3 !important; }
 header
 .text-secondary {
   color: #6c757d !important; }
 
-a.text-secondary:, a.text-secondary:focus {
+a.text-secondary a.text-secondary:focus {
   color: #494f54 !important; }
 
 .text-success {
   color: #28a745 !important; }
 
-a.text-success:, a.text-success:focus {
+a.text-success a.text-success:focus {
   color: #19692c !important; }
 
 .text-info {
   color: #17a2b8 !important; }
 
-a.text-info:, a.text-info:focus {
+a.text-info a.text-info:focus {
   color: #0f6674 !important; }
 
 .text-warning {
   color: #ffc107 !important; }
 
-a.text-warning:, a.text-warning:focus {
+a.text-warning a.text-warning:focus {
   color: #ba8b00 !important; }
 
 .text-danger {
   color: #dc3545 !important; }
 
-a.text-danger:, a.text-danger:focus {
+a.text-danger a.text-danger:focus {
   color: #a71d2a !important; }
 
 .text-light {
   color: #f8f9fa !important; }
 
-a.text-light:, a.text-light:focus {
+a.text-light a.text-light:focus {
   color: #cbd3da !important; }
 
 .text-dark {
   color: #343a40 !important; }
 
-a.text-dark:, a.text-dark:focus {
+a.text-dark a.text-dark:focus {
   color: #121416 !important; }
 
 .text-body {
@@ -3502,8 +3504,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
-  : #0c0c0c;
-  color: #666666; }
+ }
 
 a {
   -webkit-transition: .3s all ease;
@@ -3519,8 +3520,6 @@ h1, h2, h3, h4, h5,
   font-family: "Poppins", Arial, sans-serif;
   color: #000; }
 
-.bg-primary {
-  : #bc9864 !important; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -3557,13 +3556,8 @@ h1, h2, h3, h4, h5,
       display: block; }
     .dbox p a {
       color: rgba(28, 28, 28, 0.8); }
-  .dbox .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    : #bc9864;
-    margin: 0 auto;
-    margin-bottom: 20px; }
+
+  
     .dbox .icon span {
       font-size: 20px;
       color: #000; }
@@ -3575,10 +3569,6 @@ h1, h2, h3, h4, h5,
     .dbox p a:hover{text-decoration: none;}
     a:hover{text-decoration: none;
     }
-
-
-
-
 
 
 

@@ -1,4 +1,4 @@
-
+.navbar-toggle
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -3744,6 +3744,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-header {
     float: left;
   }
+  
 }
 .navbar-collapse {
   padding-right: 15px;
@@ -3991,6 +3992,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
+  navbar-header
 }
 @media (max-width: 767px) {
   .navbar-form .form-group {
