@@ -149,20 +149,8 @@ https://templatemo.com/tm-507-victory
         </style>
 
         
-<body onload="myFunction()" style="margin:0;">
-    <h1 class="h1">
-        <span class="let1" id="loader">e</span>  
-        <span class="let2" id="loader1">m</span>  
-        <span class="let3" id="loader2">b</span>  
-        <span class="let4" id="loader3">a</span>  
-        <span class="let5" id="loader4">l</span>  
-        <span class="let6" id="loader5">l</span>  
-        <span class="let7" id="loader6">a</span>  
-        <span class="let8" id="loader7">g</span>  
-        <span class="let9" id="loader8">e</span>  
-      </h1>
-    <div id="loader" class="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom"> 
+<body>
+
         <div class="header">
         <div class="container">
             <a href="#" class="navbar-brand scroll-top">Imprimerie Samra</a>
@@ -353,7 +341,7 @@ https://templatemo.com/tm-507-victory
     </section>
 
     
-    <ul class="pager">
+    <ul class="pager" style="user-select: none;">
         <li class="pager__item pager__item--prev">
             <li class="angle">
                 <a href="page3.html"><i class="fa fa-angle-left"></i></a>
@@ -372,7 +360,7 @@ https://templatemo.com/tm-507-victory
             <a class="num" href="page4.html">4</a>
         </li>
         <li class="angle">
-            <a href="page5.html"><i class="fa fa-angle-right"></i></a>
+            <a style="pointer-events:none;background-color: #b2b2b2;"><i class="fa fa-angle-right"></i></a>
         </li>
         
     </ul>
@@ -414,27 +402,6 @@ https://templatemo.com/tm-507-victory
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-        var myVar;
-        
-        function myFunction() {
-          myVar = setTimeout(showPage, 000);
-        }
-        
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-  document.getElementById("loader1").style.display = "none";
-  document.getElementById("loader2").style.display = "none";
-  document.getElementById("loader3").style.display = "none";
-  document.getElementById("loader4").style.display = "none";
-  document.getElementById("loader5").style.display = "none";
-  document.getElementById("loader6").style.display = "none";
-  document.getElementById("loader7").style.display = "none";
-  document.getElementById("loader8").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-          document.getElementById("myDiv").style.display = "block";
-        }
-        </script>
 
     <script type="text/javascript">
     $(document).ready(function() {
@@ -480,146 +447,3 @@ https://templatemo.com/tm-507-victory
 
 
 
-<style>
-
-.h1 {
-    height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-family: ‘Arial Narrow’, sans-serif;
-  font-weight: 100;
-  font-size: 4.5rem;
-  color: black;
-}
-
-
-.let1 {
-    margin-top: 6%;
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.2s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let2 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.3s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let3 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.4s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let4 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.5s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-
-}
-
-.let5 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.6s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let6 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.7s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-.let7 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.8s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let8 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 1.9s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.let9 {
-  animation: drop 1.2s ease-in-out infinite;
-  animation-delay: 2s;
-  position: relative;
-  top: 0.63em;  
-  display: inline-block;
-  text-transform: uppercase;  
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-
-
-@keyframes drop {
-    10% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-        top: 3.78em;
-        transform: rotateX(-360deg);
-    }
-    80% {
-        opacity: 1;
-        top: 3.78em;
-        transform: rotateX(-360deg);
-    }
-    90% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        top: 6.94em
-    }
-}
-</style>
