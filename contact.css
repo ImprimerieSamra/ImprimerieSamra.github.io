@@ -1,0 +1,29 @@
+.dbox {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 20px; }
+    @media (min-width: 768px) {
+      .dbox {
+        margin-bottom: 0;
+        padding: 0; } }
+    .dbox p {
+      margin-bottom: 0; }
+      .dbox p span {
+        font-weight: 500;
+        color: #bc9864;
+        display: block; }
+      .dbox p a {
+        color: rgba(255, 255, 255, 0.8); }
+    .dbox .icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #826741;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+      .dbox .icon span {
+        font-size: 20px;
+        color: #000; }
+    .dbox .text {
+      width: 100%; }
+  
